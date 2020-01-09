@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true jordanm/docker-react npm run test
 
 delpoy:
+  edge: true
   provider: elasticbeanstalk
   region: "ca-central-1"
   app: "docker"
